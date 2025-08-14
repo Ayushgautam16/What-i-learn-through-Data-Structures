@@ -55,6 +55,3 @@ Every post in this series will include:
    git clone https://github.com/<your-username>/What-i-learn-through-Data-Structures.git
    cd What-i-learn-through-Data-Structures
    
-Run any example:
-
-python episode1_array_inventory.py
