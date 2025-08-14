@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Learning Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧮 Array Learning Game</h1>
+            <p>Learn how arrays work by playing with them!</p>
+        </header>
+
+        <div class="game-section">
+            <div class="array-display">
+                <h3>Current Array:</h3>
+                <div id="array-container" class="array-container">
+                    <!-- Array elements will be displayed here -->
+                </div>
+                <div class="array-info">
+                    <span>Length: <span id="array-length">0</span></span>
+                    <span>Index Range: <span id="index-range">0 to -1</span></span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <h4>Add Elements</h4>
+                    <input type="text" id="element-input" placeholder="Enter element value">
+                    <button onclick="addElement()">Add to End</button>
+                    <button onclick="addElementAtBeginning()">Add to Beginning</button>
+                    <input type="number" id="insert-index" placeholder="Index" min="0">
+                    <button onclick="insertElement()">Insert at Index</button>
+                </div>
+
+                <div class="control-group">
+                    <h4>Remove Elements</h4>
+                    <button onclick="removeLast()">Remove Last</button>
+                    <button onclick="removeFirst()">Remove First</button>
+                    <input type="number" id="remove-index" placeholder="Index" min="0">
+                    <button onclick="removeAtIndex()">Remove at Index</button>
+                </div>
+
+                <div class="control-group">
+                    <h4>Array Operations</h4>
+                    <button onclick="reverseArray()">Reverse Array</button>
+                    <button onclick="sortArray()">Sort Array</button>
+                    <button onclick="clearArray()">Clear Array</button>
+                    <button onclick="shuffleArray()">Shuffle Array</button>
+                </div>
+
+                <div class="control-group">
+                    <h4>Search & Access</h4>
+                    <input type="text" id="search-input" placeholder="Search element">
+                    <button onclick="searchElement()">Search</button>
+                    <input type="number" id="access-index" placeholder="Index" min="0">
+                    <button onclick="accessElement()">Access Element</button>
+                </div>
+            </div>
+
+            <div class="learning-message" id="learning-message">
+                <h4>💡 Learning Tip</h4>
+                <p id="message-text">Welcome! Start by adding some elements to your array.</p>
+            </div>
+
+            <div class="history">
+                <h4>Operation History</h4>
+                <div id="history-container" class="history-container">
+                    <!-- Operation history will be displayed here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="tutorial">
+            <h3>🎯 How to Play</h3>
+            <ul>
+                <li><strong>Add Elements:</strong> See how arrays grow and maintain order</li>
+                <li><strong>Remove Elements:</strong> Understand how arrays shift elements when items are removed</li>
+                <li><strong>Access Elements:</strong> Learn about zero-based indexing</li>
+                <li><strong>Search Elements:</strong> See how linear search works through arrays</li>
+                <li><strong>Array Operations:</strong> Explore sorting, reversing, and other array methods</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
