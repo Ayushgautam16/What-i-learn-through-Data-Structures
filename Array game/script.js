@@ -379,7 +379,7 @@ setTimeout(() => {
         const sampleButton = document.createElement('button');
         sampleButton.textContent = '🎯 Add Sample Data';
         sampleButton.style.cssText = 'background: #17a2b8; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin: 10px;';
-//         sampleButton.onclick = addSampleData;
+        sampleButton.onclick = addSampleData;
         arrayContainer.appendChild(sampleButton);
     }
 }, 2000);
